@@ -18,13 +18,19 @@
             #box {
                 display: flex;
                 flex-wrap: wrap;
+                flex-direction: column;
                 justify-content: center;
                 align-content: center; 
                 min-height: 600px;
             }
             input[type=text] {
                 width: auto;
-                border-radius: 5px;
+                min-width: 500px;
+                border-radius: 20px;
+            }
+            input[type=submit] {
+                width: fit-content;
+                align-self: center;
             }
         </style>
     </head>
@@ -32,13 +38,10 @@
         <header id="header">
             <a href="index.html" class="btn btn-light">Back to Search</a>
         </header>
-        <div>
             <form action="https://google.com/search" id="box">
                  <input type="text" class="form-control" name="q">
                  <input type="hidden" name="udm" value="2">
                  <input type="submit" value="Google Image Search">
             </form>
-        </div>
     </body>
 </html>
-
