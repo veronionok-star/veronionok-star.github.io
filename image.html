@@ -28,20 +28,39 @@
                 min-width: 500px;
                 border-radius: 20px;
             }
-            input[type=submit] {
-                width: fit-content;
+            button[type=submit] {
                 align-self: center;
+
+                width: fit-content;
+                padding: 5px;
+                margin: 5px;
+
+                border-radius: 10px;
+                border: 2px solid rgb(242, 241, 241);
+            }
+            button[type=submit]:hover {
+                border: 2px solid lightgray;
+            }
+            a {
+                color: black;
+                font-weight: lighter;
+                font-size:medium;
+                
+                padding: 5px;
+            }
+            a:hover {
+                color: black;
             }
         </style>
     </head>
     <body>
         <header id="header">
-            <a href="index.html" class="btn btn-light">Back to Search</a>
+            <a href="index.html">Back to Search</a>
         </header>
             <form action="https://google.com/search" id="box">
                  <input type="text" class="form-control" name="q">
                  <input type="hidden" name="udm" value="2">
-                 <input type="submit" value="Google Image Search">
+                 <button type="submit" name="btnI" value="I%27m+Feeling+Lucky">Google Image Search</button>
             </form>
     </body>
 </html>
