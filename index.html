@@ -30,15 +30,33 @@
                 border-radius: 20px;
             }
             input[type=submit] {
-                width: fit-content;
                 align-self: center;
+
+                width: fit-content;
+                padding: 5px;
+
+                border-radius: 10px;
+                border: 2px solid rgb(229, 228, 228);
+            }
+            input[type=submit]:hover {
+                border: 2px solid lightgray;
+            }
+            a {
+                color: black;
+                font-weight: lighter;
+                font-size:medium;
+                
+                padding: 5px;
+            }
+            a:hover {
+                color: black;
             }
         </style>
     </head>
     <body>
         <header id="header">
-            <a href="image.html" class="btn btn-light">Image Search</a>
-            <a href="advanced.html" class="btn btn-light">Advanced Search</a>
+            <a href="image.html">Image Search</a>
+            <a href="advanced.html">Advanced Search</a>
         </header>
         <form id="box" action="https://www.google.com/search">
                 <input type="text" class="form-control" name="q">
