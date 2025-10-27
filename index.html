@@ -29,16 +29,17 @@
                 min-width: 500px;
                 border-radius: 20px;
             }
-            input[type=submit] {
+            button[type=submit] {
                 align-self: center;
 
                 width: fit-content;
                 padding: 5px;
+                margin: 5px;
 
                 border-radius: 10px;
-                border: 2px solid rgb(229, 228, 228);
+                border: 2px solid rgb(242, 241, 241);
             }
-            input[type=submit]:hover {
+            button[type=submit]:hover {
                 border: 2px solid lightgray;
             }
             a {
@@ -51,6 +52,10 @@
             a:hover {
                 color: black;
             }
+            div {
+                width: 300px;
+                align-self: center;
+            }
         </style>
     </head>
     <body>
@@ -60,7 +65,10 @@
         </header>
         <form id="box" action="https://www.google.com/search">
                 <input type="text" class="form-control" name="q">
-                <input type="submit" value="Google Search">
+                <div>
+                    <button type="submit">Google Search</button>
+                    <button type="submit" name="btnI" value="I%27m+Feeling+Lucky">I'm feeling lucky</button>
+                </div>
         </form>
     </body>
 </html>
